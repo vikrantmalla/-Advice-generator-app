@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
+/*Color */
+/*Primary Color */
+/*Neutral Color */
+/*mixin */
+.card {
+  background-color: #323a49;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  gap: 1.5rem;
+  text-align: center;
+  position: relative;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+
+.card .advice-id {
+  color: #52ffa8;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.card .quote {
+  color: #cee3e9;
+  line-height: 1.2em;
+  font-weight: 800;
+  font-size: 1.2rem;
+}
+
+.card .divider img {
+  margin: 1rem 0;
+}
+
+.card .btn {
+  background-color: #52ffa8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, 50%);
+          transform: translate(-50%, 50%);
+  -webkit-transition: -webkit-box-shadow 200ms ease-in-out;
+  transition: -webkit-box-shadow 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out;
+  transition: box-shadow 200ms ease-in-out, -webkit-box-shadow 200ms ease-in-out;
+  cursor: pointer;
+}
+
+.card .btn img {
+  max-width: 100%;
+  height: auto;
+}
+
+.card .btn:hover {
+  -webkit-box-shadow: 0 0 2rem #52ffa8;
+          box-shadow: 0 0 2rem #52ffa8;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.card .loading {
+  -webkit-animation: spin 1s ease-in-out infinite;
+          animation: spin 1s ease-in-out infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: translate(-50%, 50%) rotate(0deg);
+            transform: translate(-50%, 50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 50%) rotate(360deg);
+            transform: translate(-50%, 50%) rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    -webkit-transform: translate(-50%, 50%) rotate(0deg);
+            transform: translate(-50%, 50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, 50%) rotate(360deg);
+            transform: translate(-50%, 50%) rotate(360deg);
+  }
+}
+
+@media (min-width: 62em) {
+  .card .advice-id {
+    font-size: 1rem;
+  }
+  .card .quote {
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 87em) {
+  .card .advice-id {
+    font-size: 1.2rem;
+  }
+  .card .quote {
+    font-size: 1.8rem;
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #202632;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1440px;
+  min-height: 100vh;
+  padding: 1.5rem;
+}
+
+img {
+  max-width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

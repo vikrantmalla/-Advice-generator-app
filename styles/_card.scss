@@ -1,0 +1,90 @@
+.card {
+    background-color: $colorDarkGrayishBlue;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    gap: 1.5rem;
+    text-align: center;
+    position: relative;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    .advice-id {
+        color: $colorNeonGreen;
+        font-size: 0.8rem;
+        letter-spacing: 0.3rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    .quote {
+        color: $colorLightCyan;
+        line-height: 1.2em;
+        font-weight: 800;
+        font-size: 1.2rem;
+    }
+    .divider {
+        img {
+            margin: 1rem 0;
+        }
+    }
+    .btn {
+        background-color: $colorNeonGreen;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        transition: box-shadow 200ms ease-in-out;
+        cursor: pointer;
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        &:hover {
+            box-shadow: 0 0 2rem $colorNeonGreen;
+            transition: 0.5s;
+        }
+    }
+    .loading {
+        animation: spin 1s ease-in-out infinite;
+    }
+    @keyframes spin {
+        0% {
+            transform: translate(-50%, 50%) rotate(0deg);
+        }
+        100% {
+            transform: translate(-50%, 50%) rotate(360deg);
+        }
+    }
+}
+
+@media (min-width: 62em) {
+    .card {
+        .advice-id {
+            font-size: 1rem;
+        }
+        .quote {
+            font-size: 1.4rem;
+        }
+    }
+}
+
+@media (min-width: 87em) {
+    .card {
+        .advice-id {
+            font-size: 1.2rem;
+        }
+        .quote {
+            font-size: 1.8rem;
+        }
+    }
+}
